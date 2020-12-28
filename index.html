@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Virtual Game Center</title>
+	<meta name="author" content="brunobc88" />
+    <meta name="description" content="fullPage full-screen background videos." />
+    <meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,video,full-screen" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="mobile-style.css" />
+	
+
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+</head>
+<body>
+
+<div class="box">
+		<div id="logo">
+
+		</div>
+	</div>
+
+
+
+
+<div id="fullpage">
+
+
+
+	<div class="section " id="section0">
+		<video id="myVideo" loop muted data-autoplay>
+			<source src="img/1859523870.mp4" type="video/mp4">
+			<!-- <source src="img/flowers.webm" type="video/webm"> -->
+		</video>
+		<div class="layer">
+			<h1>Virtual Game Center</h1>
+		</div>
+		<div class="shadow"></div>
+
+
+	</div>
+
+	<div class="section" id="section1"><h1>Contact</h1>
+	</div>
+
+	<div class="section" id="section2">
+	    <div class="slide" id="slide1"><h1>Slide Backgrounds</h1></div>
+		<div class="slide" id="slide2"><h1>Totally customizable</h1></div>
+		<div class="slide" id="slide3"><h1>Test</h1></div>
+	</div>
+
+	<div class="section" id="section3"><h1>Des jeux exclusifs</h1>
+		<div class="containerFlex">
+		<div class="flexBox1">
+		<div class="polygon"><img src="img\medusa.jpg" height="100%" alt=""></div>
+		<div class="polygon"><img src="img\incarna-722x1024_web.jpg" width="100%" alt=""></div>
+		<div class="polygon"><img src="img\POPDOT_722x1024_web.jpg" width="100%" alt=""></div>
+		</div>
+		<div class="flexBox2">
+			<div class="polygon"><img src="img\medusa.jpg" height="100%" alt=""></div>
+			<div class="polygon"><img src="img\2147500883.jpg" width="100%" alt=""></div>
+			<div class="polygon"><img src="" width="100%" alt=""></div>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+<script type="text/javascript" src="fullpage.js"></script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        verticalCentered: true,
+        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#7BCCBE']
+    });
+</script>
+
+<!-- fullPage.js by Alvaro Trigo Lopez -->
+
+</body>
+</html>
