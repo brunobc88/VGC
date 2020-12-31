@@ -1,93 +1,1117 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<html lang="fr">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Virtual Game Center</title>
-	<meta name="author" content="brunobc88" />
-    <meta name="description" content="fullPage full-screen background videos." />
-    <meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,video,full-screen" />
-	<meta name="Resource-type" content="Document" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="VGC is a business focused HTML landing page template built with Bootstrap to help you create lead generation websites for companies and their services.">
+    <meta name="author" content="brunobc88">
 
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>Virtual Game Center</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
 	
-	<link rel="stylesheet" type="text/css" href="fullpage.css" />
-	<link rel="stylesheet" type="text/css" href="style.css" />
-	<link rel="stylesheet" type="text/css" href="mobile-style.css" />
-	
-
-
-	<!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
 </head>
-<body>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <!-- Preloader par default -->
+        <!-- <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div> -->
+        <!-- end of Preloader par default -->
+        <div class="spinnerLogo">
+            <div class="loadLogo">
+                <img src="images/logo.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+    
 
-<div class="box">
-		<div id="logo">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
 
-		</div>
-	</div>
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/logoHorizontal.png" alt="alternative"></a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#presentation">PRESENTATION</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#jeuxVR">JEUX VR</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#tarifs">TARIFS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#portfolio">PORTFOLIO</a>
+                </li>
+
+                <!-- Option Dropdown Menu -->          
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS CONDITIONS</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY POLICY</span></a>
+                    </div>
+                </li> -->
+                <!-- end of dropdown menu -->
+
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-twitter fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-instagram fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navbar -->
 
 
+    <!-- Header -->
+    <header id="header" class="header">
+        <video class="videoHome" loop muted autoplay>
+            <source src="images/videoHome.mp4" type="video/mp4">
+        </video>
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-container">
+                            <h1>VIRTUAL <span id="js-rotating">GAME, CHILL, COSY</span> CENTER</h1>
+                            <p class="p-heading p-large">Virtual Game Center, salle d'arcade nouvelle génération vous propose des expériences uniques en réalité virtuelle accessibles à tous, seul ou en équipe de 2 à 4 joueurs</p>
+                            <a class="btn-solid-lg page-scroll" href="#presentation">DECOUVRIR</a>
+                        </div>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
 
 
-<div id="fullpage">
+    <!-- Présentation -->
+    <div id="presentation" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="text-container">
+                        <div class="section-title">PRESENTATION</div>
+                        <h2>Salle d’arcade de jeux vidéo – Le grand retour</h2>
+                        <p>Oubliez votre petite console de jeu et sortez jouer dans une salle d’arcade en réalité virtuelle. Oui, la salle d’arcade de jeux vidéo fait peau neuve et nous vous proposons de découvrir de nouveaux jeux VR. Une expérience unique pour un plaisir maximal.</p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/presentation.jpg" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of Présentation -->
 
 
+    <!-- Présentation-description -->
+    <div class="cards-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <!-- Card -->
+                    <div class="card">
+                        <span class="fa-stack">
+                            <span class="hexagon"></span>
+                            <i class="fas fa-gamepad fa-stack-1x"></i>
+                        </span>
+                        <div class="card-body">
+                            <h4 class="card-title">Salle d'arcade</h4>
+                            <p>C'est pas le choix qui manque. Ping-pong, flipper, billard, borne d'arcade...</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
 
-	<div class="section " id="section0">
-		<video id="myVideo" loop muted data-autoplay>
-			<source src="img/1859523870.mp4" type="video/mp4">
-			<!-- <source src="img/flowers.webm" type="video/webm"> -->
-		</video>
-		<div class="layer">
-			<h1>Virtual Game Center</h1>
-		</div>
-		<div class="shadow"></div>
+                    <!-- Card -->
+                    <div class="card">
+                        <span class="fa-stack">
+                            <span class="hexagon"></span>
+                            <i class="fas fa-vr-cardboard fa-stack-1x"></i>
+                        </span>
+                        <div class="card-body">
+                            <h4 class="card-title">Réalité Virtuelle</h4>
+                            <p>À la croisée des chemins entre l’escape game et le cinéma, embarquez pour une aventure virtuelle unique en son genre alliant réflexion, communication et esprit d’équipe !</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <span class="fa-stack">
+                            <span class="hexagon"></span>
+                            <i class="fas fa-coffee fa-stack-1x"></i>
+                        </span>
+                        <div class="card-body">
+                            <h4 class="card-title">Détente</h4>
+                            <p>Venez vous poser dans l'espace détente autour d'une boisson chaude ou froide, à vous de choisir.</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of Présentation-description -->
 
 
-	</div>
+    <!-- Jeux VR -->
+    <div id="jeuxVR" class="filter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">JEUX VR</div>
+                    <h2>Sélection de nos jeux en réalité virtuelle</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Option Filtre -->
+                    <div class="button-group filters-button-group">
+                        <a class="button is-checked" data-filter="*"><span>TOUS</span></a>
+                        <a class="button" data-filter=".enfant"><span>ENFANT</span></a>
+                        <a class="button" data-filter=".shoot"><span>SHOOT</span></a>
+                        <a class="button" data-filter=".adulte"><span>ADULTE</span></a>
+                        <a class="button" data-filter=".solo"><span>SOLO</span></a>
+                        <a class="button" data-filter=".strategie"><span>STRATEGIE</span></a>
+                        <a class="button" data-filter=".equipe"><span>EQUIPE</span></a>
+                    </div> 
+                    <!-- end of filtre -->
+                    <div class="grid">
+                        <div class="element-item adulte shoot solo equipe">
+                            <a class="popup-with-move-anim" href="#jeuxVR-1"><div class="element-item-overlay"><span>Arizona Sunshine</span></div><img src="images/jeuxVR-1-ArizonaSunshine.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item adulte">
+                            <a class="popup-with-move-anim" href="#jeuxVR-2"><div class="element-item-overlay"><span>Beat Saber</span></div><img src="images/jeuxVR-2-BeatSaber.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item enfant adulte coop">
+                            <a class="popup-with-move-anim" href="#jeuxVR-3"><div class="element-item-overlay"><span>The Exorcist : Legion</span></div><img src="images/jeuxVR-3-TheExorcistLegion.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item enfant">
+                            <a class="popup-with-move-anim" href="#jeuxVR-4"><div class="element-item-overlay"><span>The Lab</span></div><img src="images/jeuxVR-4-TheLab.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item adulte">
+                            <a class="popup-with-move-anim" href="#jeuxVR-5"><div class="element-item-overlay"><span>Pavlov</span></div><img src="images/jeuxVR-5-Pavlov.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item enfant adulte equipe">
+                            <a class="popup-with-move-anim" href="#jeuxVR-6"><div class="element-item-overlay"><span>Tales of Escape</span></div><img src="images/jeuxVR-6-TalesOfEscape.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item enfant">
+                            <a class="popup-with-move-anim" href="#jeuxVR-7"><div class="element-item-overlay"><span>Superhot</span></div><img src="images/jeuxVR-7-Superhot.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item adulte">
+                            <a class="popup-with-move-anim" href="#jeuxVR-8"><div class="element-item-overlay"><span>Rec Room</span></div><img src="images/jeuxVR-8-RecRoom.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item enfant adulte coop">
+                            <a class="popup-with-move-anim" href="#jeuxVR-9"><div class="element-item-overlay"><span>Stormland</span></div><img src="images/jeuxVR-9-Stormland.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item enfant">
+                            <a class="popup-with-move-anim" href="#jeuxVR-10"><div class="element-item-overlay"><span>The Unspoken</span></div><img src="images/jeuxVR-10-TheUnspoken.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item adulte strategie">
+                            <a class="popup-with-move-anim" href="#jeuxVR-11"><div class="element-item-overlay"><span>Echo Arena</span></div><img src="images/jeuxVR-11-EchoArena.jpg" alt="alternative"></a>
+                        </div>
+                    </div> <!-- end of grid -->
+                    <!-- end of filter -->
+                    
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of filter -->
+    <!-- end of Jeux VR -->
 
-	<div class="section" id="section1"><h1>Contact</h1>
-	</div>
 
-	<div class="section" id="section2">
-	    <div class="slide" id="slide1"><h1>Slide Backgrounds</h1></div>
-		<div class="slide" id="slide2"><h1>Totally customizable</h1></div>
-		<div class="slide" id="slide3"><h1>Test</h1></div>
-	</div>
+    <!-- Jeux VR Lightboxes -->
+    <!-- Lightbox -->
+    <div id="jeuxVR-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <div class="youtube-player" data-id="Nw5YzBqk01I"></div>
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Arizona Sunshine</h3>
+                <hr class="line-heading">
+                <div class="testimonial-container">
+                    <i class="fas fa-hammer fa-pull-left"></i><p>Difficile</p>
+                    <i class="fas fa-users fa-pull-left"></i><p>2 à 4 joueurs</p>
+                    <i class="fas fa-clock fa-pull-left"></i><p>60 min</p>
+                    <i class="fas fa-birthday-cake fa-pull-left"></i><p>à partir de 16 ans</p>
+                </div>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <br>
+                <h6>Conçu exclusivement pour la VR, Arizona Sunshine® vous plonge en plein cœur d’une apocalypse zombie.</h6>
+                <p>Maniez des armes de manière réaliste, explorez un monde post-apocalyptique en liberté et testez vos techniques de survie en VR. La lutte contre les morts-vivants n’a jamais été aussi palpitante.</p>
+                <!-- <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#portfolio">BACK</a>  -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of Lightbox -->
 
-	<div class="section" id="section3"><h1>Des jeux exclusifs</h1>
-		<div class="containerFlex">
-		<div class="flexBox1">
-		<div class="polygon"><img src="img\medusa.jpg" height="100%" alt=""></div>
-		<div class="polygon"><img src="img\incarna-722x1024_web.jpg" width="100%" alt=""></div>
-		<div class="polygon"><img src="img\POPDOT_722x1024_web.jpg" width="100%" alt=""></div>
-		</div>
-		<div class="flexBox2">
-			<div class="polygon"><img src="img\medusa.jpg" height="100%" alt=""></div>
-			<div class="polygon"><img src="img\2147500883.jpg" width="100%" alt=""></div>
-			<div class="polygon"><img src="" width="100%" alt=""></div>
-			</div>
-		</div>
+    <!-- Lightbox -->
+    <div id="jeuxVR-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <div class="youtube-player" data-id="Nw5YzBqk01I"></div>
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Beat Saber</h3>
+                <hr class="line-heading">
+                <div class="testimonial-container">
+                    <i class="fas fa-hammer fa-pull-left"></i><p>Difficile</p>
+                    <i class="fas fa-users fa-pull-left"></i><p>2 à 4 joueurs</p>
+                    <i class="fas fa-clock fa-pull-left"></i><p>60 min</p>
+                    <i class="fas fa-birthday-cake fa-pull-left"></i><p>à partir de 16 ans</p>
+                </div>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <br>
+                <h6>Beyond Medusa’s Gate se déroule dans la Grèce antique d’Assassin’s Creed® Odyssey.</h6>
+                <p>Deux ou quatre joueurs font équipe et disposent de 60 minutes pour trouver un moyen de sortir d'une vaste grotte côtière égéenne où le légendaire navire des Argonautes est ancré.</p>
+                <p>Pour réussir à s'échapper, les joueurs doivent faire preuve de travail d'équipe, de compétence en résolution de problèmes et un timing précis pour résoudre des énigmes et trouver leur chemin. Les joueurs commencent l'aventure en choisissant leur avatar parmi six personnages différents et peuvent les personnaliser avec des accessoires de la Grèce antique.</p>
+                <!-- <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#portfolio">BACK</a>  -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of Lightbox -->
 
-	</div>
+    <!-- Lightbox -->
+    <div id="jeuxVR-3" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <div class="youtube-player" data-id="Nw5YzBqk01I"></div>
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>The Exorcist: Legion</h3>
+                <hr class="line-heading">
+                <div class="testimonial-container">
+                    <i class="fas fa-hammer fa-pull-left"></i><p>Difficile</p>
+                    <i class="fas fa-users fa-pull-left"></i><p>2 à 4 joueurs</p>
+                    <i class="fas fa-clock fa-pull-left"></i><p>60 min</p>
+                    <i class="fas fa-birthday-cake fa-pull-left"></i><p>à partir de 16 ans</p>
+                </div>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <br>
+                <h6>Beyond Medusa’s Gate se déroule dans la Grèce antique d’Assassin’s Creed® Odyssey.</h6>
+                <p>Deux ou quatre joueurs font équipe et disposent de 60 minutes pour trouver un moyen de sortir d'une vaste grotte côtière égéenne où le légendaire navire des Argonautes est ancré.</p>
+                <p>Pour réussir à s'échapper, les joueurs doivent faire preuve de travail d'équipe, de compétence en résolution de problèmes et un timing précis pour résoudre des énigmes et trouver leur chemin. Les joueurs commencent l'aventure en choisissant leur avatar parmi six personnages différents et peuvent les personnaliser avec des accessoires de la Grèce antique.</p>
+                <!-- <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#portfolio">BACK</a>  -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of Lightbox -->
 
-</div>
+    <!-- Lightbox -->
+    <div id="jeuxVR-4" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <div class="youtube-player" data-id="Nw5YzBqk01I"></div>
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>The Exorcist: Legion</h3>
+                <hr class="line-heading">
+                <div class="testimonial-container">
+                    <i class="fas fa-hammer fa-pull-left"></i><p>Difficile</p>
+                    <i class="fas fa-users fa-pull-left"></i><p>2 à 4 joueurs</p>
+                    <i class="fas fa-clock fa-pull-left"></i><p>60 min</p>
+                    <i class="fas fa-birthday-cake fa-pull-left"></i><p>à partir de 16 ans</p>
+                </div>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <br>
+                <h6>Beyond Medusa’s Gate se déroule dans la Grèce antique d’Assassin’s Creed® Odyssey.</h6>
+                <p>Deux ou quatre joueurs font équipe et disposent de 60 minutes pour trouver un moyen de sortir d'une vaste grotte côtière égéenne où le légendaire navire des Argonautes est ancré.</p>
+                <p>Pour réussir à s'échapper, les joueurs doivent faire preuve de travail d'équipe, de compétence en résolution de problèmes et un timing précis pour résoudre des énigmes et trouver leur chemin. Les joueurs commencent l'aventure en choisissant leur avatar parmi six personnages différents et peuvent les personnaliser avec des accessoires de la Grèce antique.</p>
+                <!-- <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#portfolio">BACK</a>  -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of Lightbox -->
 
-<script type="text/javascript" src="fullpage.js"></script>
-<script type="text/javascript">
-    var myFullpage = new fullpage('#fullpage', {
-        verticalCentered: true,
-        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#7BCCBE']
-    });
-</script>
+    <!-- Lightbox -->
+    <div id="jeuxVR-5" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <div class="youtube-player" data-id="Nw5YzBqk01I"></div>
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>The Exorcist: Legion</h3>
+                <hr class="line-heading">
+                <div class="testimonial-container">
+                    <i class="fas fa-hammer fa-pull-left"></i><p>Difficile</p>
+                    <i class="fas fa-users fa-pull-left"></i><p>2 à 4 joueurs</p>
+                    <i class="fas fa-clock fa-pull-left"></i><p>60 min</p>
+                    <i class="fas fa-birthday-cake fa-pull-left"></i><p>à partir de 16 ans</p>
+                </div>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <br>
+                <h6>Beyond Medusa’s Gate se déroule dans la Grèce antique d’Assassin’s Creed® Odyssey.</h6>
+                <p>Deux ou quatre joueurs font équipe et disposent de 60 minutes pour trouver un moyen de sortir d'une vaste grotte côtière égéenne où le légendaire navire des Argonautes est ancré.</p>
+                <p>Pour réussir à s'échapper, les joueurs doivent faire preuve de travail d'équipe, de compétence en résolution de problèmes et un timing précis pour résoudre des énigmes et trouver leur chemin. Les joueurs commencent l'aventure en choisissant leur avatar parmi six personnages différents et peuvent les personnaliser avec des accessoires de la Grèce antique.</p>
+                <!-- <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#portfolio">BACK</a>  -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of Lightbox -->
 
-<!-- fullPage.js by Alvaro Trigo Lopez -->
+    <!-- Lightbox -->
+    <div id="jeuxVR-6" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <div class="youtube-player" data-id="Nw5YzBqk01I"></div>
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>The Exorcist: Legion</h3>
+                <hr class="line-heading">
+                <div class="testimonial-container">
+                    <i class="fas fa-hammer fa-pull-left"></i><p>Difficile</p>
+                    <i class="fas fa-users fa-pull-left"></i><p>2 à 4 joueurs</p>
+                    <i class="fas fa-clock fa-pull-left"></i><p>60 min</p>
+                    <i class="fas fa-birthday-cake fa-pull-left"></i><p>à partir de 16 ans</p>
+                </div>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <br>
+                <h6>Beyond Medusa’s Gate se déroule dans la Grèce antique d’Assassin’s Creed® Odyssey.</h6>
+                <p>Deux ou quatre joueurs font équipe et disposent de 60 minutes pour trouver un moyen de sortir d'une vaste grotte côtière égéenne où le légendaire navire des Argonautes est ancré.</p>
+                <p>Pour réussir à s'échapper, les joueurs doivent faire preuve de travail d'équipe, de compétence en résolution de problèmes et un timing précis pour résoudre des énigmes et trouver leur chemin. Les joueurs commencent l'aventure en choisissant leur avatar parmi six personnages différents et peuvent les personnaliser avec des accessoires de la Grèce antique.</p>
+                <!-- <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#portfolio">BACK</a>  -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of Lightbox -->
 
+    <!-- Lightbox -->
+    <div id="jeuxVR-7" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <div class="youtube-player" data-id="Nw5YzBqk01I"></div>
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>The Exorcist: Legion</h3>
+                <hr class="line-heading">
+                <div class="testimonial-container">
+                    <i class="fas fa-hammer fa-pull-left"></i><p>Difficile</p>
+                    <i class="fas fa-users fa-pull-left"></i><p>2 à 4 joueurs</p>
+                    <i class="fas fa-clock fa-pull-left"></i><p>60 min</p>
+                    <i class="fas fa-birthday-cake fa-pull-left"></i><p>à partir de 16 ans</p>
+                </div>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <br>
+                <h6>Beyond Medusa’s Gate se déroule dans la Grèce antique d’Assassin’s Creed® Odyssey.</h6>
+                <p>Deux ou quatre joueurs font équipe et disposent de 60 minutes pour trouver un moyen de sortir d'une vaste grotte côtière égéenne où le légendaire navire des Argonautes est ancré.</p>
+                <p>Pour réussir à s'échapper, les joueurs doivent faire preuve de travail d'équipe, de compétence en résolution de problèmes et un timing précis pour résoudre des énigmes et trouver leur chemin. Les joueurs commencent l'aventure en choisissant leur avatar parmi six personnages différents et peuvent les personnaliser avec des accessoires de la Grèce antique.</p>
+                <!-- <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#portfolio">BACK</a>  -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of Lightbox -->
+
+        <!-- Lightbox -->
+    <div id="jeuxVR-8" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <div class="youtube-player" data-id="Nw5YzBqk01I"></div>
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Arizona Sunshine</h3>
+                <hr class="line-heading">
+                <div class="testimonial-container">
+                    <i class="fas fa-hammer fa-pull-left"></i><p>Difficile</p>
+                    <i class="fas fa-users fa-pull-left"></i><p>2 à 4 joueurs</p>
+                    <i class="fas fa-clock fa-pull-left"></i><p>60 min</p>
+                    <i class="fas fa-birthday-cake fa-pull-left"></i><p>à partir de 16 ans</p>
+                </div>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <br>
+                <h6>Beyond Medusa’s Gate se déroule dans la Grèce antique d’Assassin’s Creed® Odyssey.</h6>
+                <p>Deux ou quatre joueurs font équipe et disposent de 60 minutes pour trouver un moyen de sortir d'une vaste grotte côtière égéenne où le légendaire navire des Argonautes est ancré.</p>
+                <p>Pour réussir à s'échapper, les joueurs doivent faire preuve de travail d'équipe, de compétence en résolution de problèmes et un timing précis pour résoudre des énigmes et trouver leur chemin. Les joueurs commencent l'aventure en choisissant leur avatar parmi six personnages différents et peuvent les personnaliser avec des accessoires de la Grèce antique.</p>
+                <!-- <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#portfolio">BACK</a>  -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of Lightbox -->
+
+    <!-- Lightbox -->
+    <div id="jeuxVR-9" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <div class="youtube-player" data-id="Nw5YzBqk01I"></div>
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Beat Saber</h3>
+                <hr class="line-heading">
+                <div class="testimonial-container">
+                    <i class="fas fa-hammer fa-pull-left"></i><p>Difficile</p>
+                    <i class="fas fa-users fa-pull-left"></i><p>2 à 4 joueurs</p>
+                    <i class="fas fa-clock fa-pull-left"></i><p>60 min</p>
+                    <i class="fas fa-birthday-cake fa-pull-left"></i><p>à partir de 16 ans</p>
+                </div>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <br>
+                <h6>Beyond Medusa’s Gate se déroule dans la Grèce antique d’Assassin’s Creed® Odyssey.</h6>
+                <p>Deux ou quatre joueurs font équipe et disposent de 60 minutes pour trouver un moyen de sortir d'une vaste grotte côtière égéenne où le légendaire navire des Argonautes est ancré.</p>
+                <p>Pour réussir à s'échapper, les joueurs doivent faire preuve de travail d'équipe, de compétence en résolution de problèmes et un timing précis pour résoudre des énigmes et trouver leur chemin. Les joueurs commencent l'aventure en choisissant leur avatar parmi six personnages différents et peuvent les personnaliser avec des accessoires de la Grèce antique.</p>
+                <!-- <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#portfolio">BACK</a>  -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of Lightbox -->
+
+    <!-- Lightbox -->
+    <div id="jeuxVR-10" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <div class="youtube-player" data-id="Nw5YzBqk01I"></div>
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>The Exorcist: Legion</h3>
+                <hr class="line-heading">
+                <div class="testimonial-container">
+                    <i class="fas fa-hammer fa-pull-left"></i><p>Difficile</p>
+                    <i class="fas fa-users fa-pull-left"></i><p>2 à 4 joueurs</p>
+                    <i class="fas fa-clock fa-pull-left"></i><p>60 min</p>
+                    <i class="fas fa-birthday-cake fa-pull-left"></i><p>à partir de 16 ans</p>
+                </div>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <br>
+                <h6>Beyond Medusa’s Gate se déroule dans la Grèce antique d’Assassin’s Creed® Odyssey.</h6>
+                <p>Deux ou quatre joueurs font équipe et disposent de 60 minutes pour trouver un moyen de sortir d'une vaste grotte côtière égéenne où le légendaire navire des Argonautes est ancré.</p>
+                <p>Pour réussir à s'échapper, les joueurs doivent faire preuve de travail d'équipe, de compétence en résolution de problèmes et un timing précis pour résoudre des énigmes et trouver leur chemin. Les joueurs commencent l'aventure en choisissant leur avatar parmi six personnages différents et peuvent les personnaliser avec des accessoires de la Grèce antique.</p>
+                <!-- <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#portfolio">BACK</a>  -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of Lightbox -->
+
+    <!-- Lightbox -->
+    <div id="jeuxVR-11" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <div class="youtube-player" data-id="Nw5YzBqk01I"></div>
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>The Exorcist: Legion</h3>
+                <hr class="line-heading">
+                <div class="testimonial-container">
+                    <i class="fas fa-hammer fa-pull-left"></i><p>Difficile</p>
+                    <i class="fas fa-users fa-pull-left"></i><p>2 à 4 joueurs</p>
+                    <i class="fas fa-clock fa-pull-left"></i><p>60 min</p>
+                    <i class="fas fa-birthday-cake fa-pull-left"></i><p>à partir de 16 ans</p>
+                </div>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <br>
+                <h6>Beyond Medusa’s Gate se déroule dans la Grèce antique d’Assassin’s Creed® Odyssey.</h6>
+                <p>Deux ou quatre joueurs font équipe et disposent de 60 minutes pour trouver un moyen de sortir d'une vaste grotte côtière égéenne où le légendaire navire des Argonautes est ancré.</p>
+                <p>Pour réussir à s'échapper, les joueurs doivent faire preuve de travail d'équipe, de compétence en résolution de problèmes et un timing précis pour résoudre des énigmes et trouver leur chemin. Les joueurs commencent l'aventure en choisissant leur avatar parmi six personnages différents et peuvent les personnaliser avec des accessoires de la Grèce antique.</p>
+                <!-- <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#portfolio">BACK</a>  -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of Lightbox -->
+
+
+    <!-- Tarifs -->
+    <div id="tarifs" class="cards-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">TARIFS</div>
+                    <h2>Nos formules</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="images/services-1.jpg" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">A la carte</h3>
+                            <p>Lorem ipsum dolor sit amet. Ut laboriosam qui reiciendis iste est incidunt adipisci qui ipsum quisquam aut sapiente expedita non perferendis recusandae!</p>
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Avantage</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Avantage</div>
+                                </li>
+                            </ul>
+                            <p class="price">A partir de <span>30€</span></p>
+                        </div>
+                        <div class="button-container">
+                            <a class="btn-solid-reg page-scroll" href="#contact">DETAILS</a>
+                        </div> <!-- end of button-container -->
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="images/services-2.jpg" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Forfait</h3>
+                            <p>Lorem ipsum dolor sit amet. Ut laboriosam qui reiciendis iste est incidunt adipisci qui ipsum quisquam aut sapiente expedita non perferendis recusandae!</p>
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Avantage</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Avantage</div>
+                                </li>
+                            </ul>
+                            <p class="price">A partir de <span>99€</span></p>
+                        </div>
+                        <div class="button-container">
+                            <a class="btn-solid-reg page-scroll" href="#contact">DETAILS</a>
+                        </div> <!-- end of button-container -->
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="images/services-3.jpg" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Equipe</h3>
+                            <p>Lorem ipsum dolor sit amet. Ut laboriosam qui reiciendis iste est incidunt adipisci qui ipsum quisquam aut sapiente expedita non perferendis recusandae!</p>
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Avantage</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Avantage</div>
+                                </li>
+                            </ul>
+                            <p class="price">A partir de <span>99€</span></p>
+                        </div>
+                        <div class="button-container">
+                            <a class="btn-solid-reg page-scroll" href="#contact">DETAILS</a>
+                        </div> <!-- end of button-container -->
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-2 -->
+    <!-- end of services -->
+
+
+    <!-- Portfolio -->
+	<div id="portfolio" class="filter">
+		<div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">PORTFOLIO</div>
+                    <h2>Pour les curieux</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Option Filtre -->
+                    <!-- <div class="button-group filters-button-group">
+                        <a class="button is-checked" data-filter="*"><span>SHOW ALL</span></a>
+                        <a class="button" data-filter=".design"><span>DESIGN</span></a>
+                        <a class="button" data-filter=".development"><span>DEVELOPMENT</span></a>
+                        <a class="button" data-filter=".marketing"><span>MARKETING</span></a>
+                        <a class="button" data-filter=".seo"><span>SEO</span></a>
+                    </div>  -->
+                    <!-- end of filtre -->
+                    <div class="grid">
+                        <div class="element-item development">
+                            <a class="popup-with-move-anim" href="#project-1"><div class="element-item-overlay"><span>Description</span></div><img src="images/project-1.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item development">
+                            <a class="popup-with-move-anim" href="#project-2"><div class="element-item-overlay"><span>Description</span></div><img src="images/project-2.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item design development marketing">
+                            <a class="popup-with-move-anim" href="#project-3"><div class="element-item-overlay"><span>Description</span></div><img src="images/project-3.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item design development marketing">
+                            <a class="popup-with-move-anim" href="#project-4"><div class="element-item-overlay"><span>Description</span></div><img src="images/project-4.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item design development marketing seo">
+                            <a class="popup-with-move-anim" href="#project-5"><div class="element-item-overlay"><span>Description</span></div><img src="images/project-5.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item design marketing seo">
+                            <a class="popup-with-move-anim" href="#project-6"><div class="element-item-overlay"><span>Description</span></div><img src="images/project-6.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item design marketing">
+                            <a class="popup-with-move-anim" href="#project-7"><div class="element-item-overlay"><span>Description</span></div><img src="images/project-7.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item design marketing">
+                            <a class="popup-with-move-anim" href="#project-8"><div class="element-item-overlay"><span>Description</span></div><img src="images/project-8.jpg" alt="alternative"></a>
+                        </div>
+                    </div> <!-- end of grid -->
+                    <!-- end of filter -->
+                    
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+		</div> <!-- end of container -->
+    </div> <!-- end of filter -->
+    <!-- end of portfolio -->
+
+
+    <!-- Project Lightboxes -->
+    <!-- Lightbox -->
+    <div id="project-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-12">
+                <img class="img-fluid" src="images/header-background.jpg" alt="alternative">
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- Lightbox -->
+    <div id="project-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-12">
+                <img class="img-fluid" src="images/header-background.jpg" alt="alternative">
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- Lightbox -->
+    <div id="project-3" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-12">
+                <img class="img-fluid" src="images/header-background.jpg" alt="alternative">
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- Lightbox -->
+    <div id="project-4" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-12">
+                <img class="img-fluid" src="images/header-background.jpg" alt="alternative">
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- Lightbox -->
+    <div id="project-5" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-12">
+                <img class="img-fluid" src="images/header-background.jpg" alt="alternative">
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- Lightbox -->
+    <div id="project-6" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-12">
+                <img class="img-fluid" src="images/header-background.jpg" alt="alternative">
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- Lightbox -->
+    <div id="project-7" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-12">
+                <img class="img-fluid" src="images/header-background.jpg" alt="alternative">
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- Lightbox -->
+    <div id="project-8" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-12">
+                <img class="img-fluid" src="images/header-background.jpg" alt="alternative">
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- end of project lightboxes -->
+
+
+    <!-- Avis clients -->
+    <div class="slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Quelques avis clients</h2>
+                    <p class="p-heading">Juré on les a pris complètement au hasard</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container card-slider">
+                            <div class="swiper-wrapper">
+                                
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/client-1.jpg" alt="alternative">
+                                        <div class="card-body">
+                                            <div class="testimonial-text">Le retour à la vie de tous les jours risque d'être difficile après avoir parcouru le monde en VR avec la famille. Les enfants en redemandent.</div>
+                                            <div class="testimonial-author">Homer Simpson - Contrôleur de la sécurité nucléaire</div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/client-2.jpg" alt="alternative">
+                                        <div class="card-body">
+                                            <div class="testimonial-text">J'ai acheté le pack de plusieurs heures il y a quelques jours et j'ai déjà dû en reprendre un. C'est trop bien !!</div>
+                                            <div class="testimonial-author">Kenny McCormick - Etudiant</div>
+                                        </div>
+                                    </div>        
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/client-3.jpg" alt="alternative">
+                                        <div class="card-body">
+                                            <div class="testimonial-text">Le gérant de VGC nous guide personnellement le temps de prendre ses marques dans le jeux.</div>
+                                            <div class="testimonial-author">Roy Doe - Artisan</div>
+                                        </div>
+                                    </div>        
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/client-4.jpg" alt="alternative">
+                                        <div class="card-body">
+                                            <div class="testimonial-text">Au début, je pensais que les prix étaient un peu élevés pour ce qu'ils proposent, mais l'expérience proposée n'a aucun équivalent.</div>
+                                            <div class="testimonial-author">Peter Griffin - Travailleur à la brasserie</div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/client-5.jpg" alt="alternative">
+                                        <div class="card-body">
+                                            <div class="testimonial-text">Je recommande VGC à chaque propriétaire d'entreprise qui souhaite souder son équipe grâce aux jeux en coopération.</div>
+                                            <div class="testimonial-author">Stan Smith - CIA</div>
+                                        </div>
+                                    </div>        
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/client-6.jpg" alt="alternative">
+                                        <div class="card-body">
+                                            <div class="testimonial-text">Mes attentes concernant le VR était élevés, mais j'ai quand même été epoustouflé.</div>
+                                            <div class="testimonial-author">Anne Doe - Comptable</div>
+                                        </div>
+                                    </div>        
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+                            
+                            </div> <!-- end of swiper-wrapper -->
+        
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+        
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of sliedr-container -->
+                    <!-- end of card slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider -->
+    <!-- end of Avis clients -->
+
+
+    <!-- Contact -->
+    <div id="contact" class="form-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <div class="section-title">CONTACT</div>
+                        <h2>Nous contacter, c'est simple</h2>
+                        <p>Vous pouvez vous arrêter à nos locaux pour une tasse de café, nous appeler ou utiliser simplement le formulaire de contact pour toutes questions et demandes de renseignements</p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="address"><i class="fas fa-map-marker-alt"></i>3 Esplanade Gutenberg, 83500 La Seyne-sur-Mer</li>
+                            <li><i class="fas fa-phone"></i><a href="tel:003024630820">04 98 99 98 99</a></li>
+                            <li><i class="fas fa-mobile-alt"></i><a href="tel:003024630820">06 99 98 99 98</a></li>
+                            <li><i class="fas fa-envelope"></i><a href="mailto:office@aria.com">mail@vgc.fr</a></li>
+                        </ul>
+                        <h3>Pour nous suivre partout</h3>
+
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <span class="hexagon"></span>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <span class="hexagon"></span>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <span class="hexagon"></span>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    
+                    <!-- Contact Form -->
+                    <form id="contactForm" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="cname" required>
+                            <label class="label-control" for="cname">Nom</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control-input" id="cemail" required>
+                            <label class="label-control" for="cemail">Email</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                            <label class="label-control" for="cmessage">Votre message</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>J'ai lu et j'accepte les <a href="#your-link">conditions générales d'utilisation</a>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">ENVOYER</button>
+                        </div>
+                        <div class="form-message">
+                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                        </div>
+                    </form>
+                    <!-- end of contact form -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form-2 -->
+    <!-- end of contact -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-container about">
+                        <h4>Quelques mots concernant VGC</h4>
+                        <p class="white">Nous sommes des passionnés par les jeux vidéos depuis notre tendre enfance. En créant cette société nous avons voulu revenir au temps bénis des salles d'arcades remixés avec les techs d'aujourd'hui.</p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Lien</h4>
+                        <ul class="list-unstyled li-space-lg white">
+                            <li>
+                                <a class="white" href="#your-link">Conditions générales d'utilisation</a>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Amis</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li>
+                                <a class="white" href="#your-link">coffee.com</a>
+                            </li>
+                            <li>
+                               <a class="white" href="#your-link">forumGamersVR.fr</a>
+                            </li>
+                            <li class="media">
+                                <a class="white" href="#your-link">sofa.net</a>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Partenaires</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li>
+                                <a class="white" href="#your-link">game.com</a>
+                            </li>
+                            <li>
+                                <a class="white" href="#your-link">materiel.com</a>
+                            </li>
+                            <li>
+                                <a class="white" href="#your-link">divers.fr</a>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
 </body>
 </html>
