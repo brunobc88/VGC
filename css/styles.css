@@ -648,19 +648,19 @@ input[type='checkbox'] {
 }
 
 .spinnerLogo .loadLogo {
-	height: 200px;
+	width: 300px;
 	opacity: 0;
 	animation: loadLogo 2s infinite alternate;
 }
 
 .spinnerLogo .loadLogo img {
-	height: 100%;
+	width: 100%;
 }
 
 @keyframes loadLogo{
     100%{
 		opacity: 1;
-		height: 300px;
+		width: 400px;
     }
 }
 
@@ -1889,6 +1889,28 @@ a:hover.back-to-top {
 	}
 }
 /* end of Max-height height 500px */
+
+
+/* Max-width width 500px */
+@media (max-width: 500px) {
+	.spinnerLogo .loadLogo {
+		width: 200px;
+		opacity: 0;
+		animation: loadLogo 2s infinite alternate;
+	}
+	
+	.spinnerLogo .loadLogo img {
+		width: 100%;
+	}
+	
+	@keyframes loadLogo{
+		100%{
+			opacity: 1;
+			width: 300px;
+		}
+	}
+}
+/* end of Max-width width 500px */
 
 
 /* Max-width width 1000px */
