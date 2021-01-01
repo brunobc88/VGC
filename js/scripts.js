@@ -7,9 +7,19 @@
 
 (function($) {
     "use strict"; 
+
+    /* Page chargement - Actif selon un temps déterminé */
+    var preloaderFadeOutTime = 500;
+		function hidePreloader() {
+			var preloader = $('.spinner-wrapper');
+			setTimeout(function() {
+				preloader.fadeOut(preloaderFadeOutTime);
+			}, 500);
+		}
+		hidePreloader();
 	
-	/* Pré-chargement - Voile de démarrage */
-	$(window).on('load', function() {
+	/* Page chargement - Actif tant que la page n'est pas chargé à 100% */
+	/*$(window).on('load', function() {
 		var preloaderFadeOutTime = 500;
 		function hidePreloader() {
 			var preloader = $('.spinner-wrapper');
@@ -18,7 +28,7 @@
 			}, 500);
 		}
 		hidePreloader();
-	});
+	});*/
 
 	
 	/* Navbar Scripts */
