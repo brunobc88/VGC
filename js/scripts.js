@@ -89,7 +89,7 @@
     });
 
     
-    /* Lightbox - Magnific Popup - Portfolio */
+    /* Lightbox - Magnific Popup - JeuxVR */
 	$('.popup-with-move-anim').magnificPopup({
 		type: 'inline',
 		fixedContentPos: false, /* keep it false to avoid html tag shift with margin-right: 17px */
@@ -98,9 +98,30 @@
 		closeBtnInside: true,
 		preloader: false,
 		midClick: true,
-		removalDelay: 300,
-		mainClass: 'my-mfp-slide-bottom'
+        removalDelay: 300,
+		mainClass: 'my-mfp-slide-bottom' /* effet lors de l'apparition */
     });
+
+
+    /* Lightbox - Magnific Popup - Portfolio */
+        $('.popup-gallery-portfolio').magnificPopup({
+            delegate: 'a',
+            type: 'inline',
+            tLoading: 'Loading image #%curr%...',
+            mainClass: 'my-mfp-slide-bottom',
+            gallery: {
+                enabled: true,
+                navigateByImgClick: true,
+                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+            },
+            image: {
+                tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                titleSrc: function(item) {
+                    return item.el.attr('title') + '<small>by Author</small>';
+                }
+            }
+        });
+  
     
 
     /* Filter - Isotope */
@@ -379,7 +400,7 @@
     iframe.setAttribute('allowfullscreen', '1');
     iframe.setAttribute(
       'allow',
-      'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+      'accelerometer; encrypted-media; gyroscope; picture-in-picture'
     );
     div.parentNode.replaceChild(iframe, div);
   }
