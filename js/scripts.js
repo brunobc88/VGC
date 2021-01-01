@@ -14,7 +14,7 @@
 			var preloader = $('.spinner-wrapper');
 			setTimeout(function() {
 				preloader.fadeOut(preloaderFadeOutTime);
-			}, 3000);
+			}, 3600);
 		}
 		hidePreloader();
 	
