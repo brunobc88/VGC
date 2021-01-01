@@ -9,12 +9,12 @@
     "use strict"; 
 
     /* Page chargement - Actif selon un temps déterminé */
-    var preloaderFadeOutTime = 500;
+    var preloaderFadeOutTime = 1000;
 		function hidePreloader() {
 			var preloader = $('.spinner-wrapper');
 			setTimeout(function() {
 				preloader.fadeOut(preloaderFadeOutTime);
-			}, 500);
+			}, 3000);
 		}
 		hidePreloader();
 	
