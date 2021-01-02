@@ -1009,6 +1009,11 @@ input[type='checkbox'] {
 	background-color: #fff;
 }
 
+.testimonial-container .fa-pull-left{
+	margin-right: 1em;
+	line-height: 1.56em;
+}
+
 
 /*************************/
 /*     08. Details 1     */
