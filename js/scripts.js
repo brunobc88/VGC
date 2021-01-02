@@ -8,7 +8,7 @@
 (function($) {
     "use strict"; 
 
-    /* Page chargement - Actif selon un temps déterminé */
+    /* Page chargement option 1 - Actif selon un temps déterminé */
     var preloaderFadeOutTime = 1000;
 		function hidePreloader() {
 			var preloader = $('.spinner-wrapper');
@@ -18,7 +18,7 @@
 		}
 		hidePreloader();
 	
-	/* Page chargement - Actif tant que la page n'est pas chargé à 100% */
+	/* Page chargement option 2 - Actif tant que la page n'est pas chargé à 100% */
 	/*$(window).on('load', function() {
 		var preloaderFadeOutTime = 500;
 		function hidePreloader() {
@@ -421,12 +421,13 @@
       var videoId = playerElements[n].dataset.id;
       var div = document.createElement('div');
       div.setAttribute('data-id', videoId);
-      var thumbNode = document.createElement('img');
+    // Pour créer une vignette de la video Youtube. Attention temps de chargement allongé
+      /*var thumbNode = document.createElement('img');
       thumbNode.src = '//i.ytimg.com/vi/ID/hqdefault.jpg'.replace(
         'ID',
         videoId
       );
-      div.appendChild(thumbNode);
+      div.appendChild(thumbNode);*/
       var playButton = document.createElement('div');
       playButton.setAttribute('class', 'play');
       div.appendChild(playButton);
