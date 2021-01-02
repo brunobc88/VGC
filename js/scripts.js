@@ -1,5 +1,4 @@
-/* Template: Aria - Business HTML Landing Page Template
-   Author: Inovatik
+/* Author: Inovatik
    Created: Jul 2019
    Description: Custom JS file
 */
@@ -8,7 +7,8 @@
 (function($) {
     "use strict"; 
 
-    /* Page chargement option 1 - Actif selon un temps déterminé */
+    /* Page chargement */
+    // Option 1 - Actif selon un temps déterminé
     var preloaderFadeOutTime = 1000;
 		function hidePreloader() {
 			var preloader = $('.spinner-wrapper');
@@ -18,7 +18,7 @@
 		}
 		hidePreloader();
 	
-	/* Page chargement option 2 - Actif tant que la page n'est pas chargé à 100% */
+	// Option 2 - Actif tant que la page n'est pas chargé à 100%
 	/*$(window).on('load', function() {
 		var preloaderFadeOutTime = 500;
 		function hidePreloader() {
@@ -41,7 +41,7 @@
 		}
     });
 
-	// Effet de scroll vers une ancre de la page - requires jQuery Easing plugin
+	// Effet de scroll vers une ancre de la page - requiert jQuery Easing plugin
 	$(function() {
 		$(document).on('click', 'a.page-scroll', function(event) {
 			var $anchor = $(this);
@@ -59,16 +59,17 @@
     });
 
 
-    /* Rotation Text - Morphtext */
+    /* Rotation Texte - Morphtext */
 	$("#js-rotating").Morphext({
-		// The [in] animation type. Refer to Animate.css for a list of available animations.
+		// Effet de transition. Voir styles.css pour changer l'effet.
 		animation: "fadeIn",
-		// An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
+		// Séparateur utilisé dans le HTML pour différencier les mots.
 		separator: ",",
-		// The delay between the changing of each phrase in milliseconds.
-		speed: 2000,
+		// Délai entre chaque changement de mot.
+        speed: 2000,
+        // Fonction appelé à la fin.
 		complete: function () {
-			// Called after the entrance animation is executed.
+			
 		}
     });
     
@@ -87,11 +88,11 @@
 		slidesPerView: 3,
 		spaceBetween: 20,
         breakpoints: {
-            // when window is <= 992px
+            // responsive - quand la page <= 992px
             992: {
                 slidesPerView: 2
             },
-            // when window is <= 768px
+            // responsive - quand la page <= 768px
             768: {
                 slidesPerView: 1
             } 
@@ -99,7 +100,8 @@
     });
 
     
-    /* Lightbox - Magnific Popup - JeuxVR */
+    /* Lightbox - Magnific Popup */
+    // JeuxVR
 	$('.popup-with-move-anim').magnificPopup({
 		type: 'inline',
 		fixedContentPos: false, /* keep it false to avoid html tag shift with margin-right: 17px */
@@ -112,13 +114,12 @@
 		mainClass: 'my-mfp-slide-bottom' /* effet lors de l'apparition */
     });
 
-
-    /* Lightbox - Magnific Popup - Portfolio */
+    // Portfolio
         $('.popup-gallery-portfolio').magnificPopup({
             delegate: 'a',
             type: 'inline',
             tLoading: 'Loading image #%curr%...',
-            mainClass: 'my-mfp-slide-bottom',
+            mainClass: 'my-mfp-slide-bottom', /* effet lors de l'apparition */
             gallery: {
                 enabled: true,
                 navigateByImgClick: true,
@@ -133,10 +134,9 @@
         });
   
     
-
-    /* Filter - Isotope */
+    /* Filtre affichage Lightbox - Isotope */
     var $grid = $('.grid').isotope({
-        // options
+        // Options
         itemSelector: '.element-item',
         layoutMode: 'fitRows'
     });
@@ -372,8 +372,7 @@
     }
     
 
-    /* Back To Top Button */
-    // create the back to top button
+    /* Bouton retour en haut de page */
     $('body').prepend('<a href="body" class="back-to-top page-scroll">Back to Top</a>');
     var amountScrolled = 700;
     $(window).scroll(function() {
@@ -384,8 +383,7 @@
         }
     });
 
-
-	/* Removes Long Focus On Buttons */
+    // Supprime le Long Focus
 	$(".button, a, button").mouseup(function() {
 		$(this).blur();
 	});
@@ -393,18 +391,12 @@
 })(jQuery);
 
 
-
-
-/*
-   * Light YouTube Embeds by @labnol
-   * Credit: https://www.labnol.org/
-   */
-
+   /* Light YouTube Embeds - by @labnol https://www.labnol.org/ */
   function labnolIframe(div) {
     var iframe = document.createElement('iframe');
     iframe.setAttribute(
       'src',
-      'https://www.youtube.com/embed/' + div.dataset.id + '?rel=0&autoplay=0&showinfo=0&iv_load_policy=3' // empêche la video de se lancer automatiquement
+      'https://www.youtube.com/embed/' + div.dataset.id + '?rel=0&autoplay=0&showinfo=0&iv_load_policy=3' // empêche la video de se lancer automatiquement + divers options (cf embed youtube)
     );
     iframe.setAttribute('frameborder', '0');
     iframe.setAttribute('allowfullscreen', '1');
@@ -421,7 +413,7 @@
       var videoId = playerElements[n].dataset.id;
       var div = document.createElement('div');
       div.setAttribute('data-id', videoId);
-    // Pour créer une vignette de la video Youtube. Attention temps de chargement allongé
+    // Option Pour créer une vignette de la video Youtube. Attention temps de chargement de la page allongé
       /*var thumbNode = document.createElement('img');
       thumbNode.src = '//i.ytimg.com/vi/ID/hqdefault.jpg'.replace(
         'ID',
@@ -439,3 +431,4 @@
   }
 
   document.addEventListener('DOMContentLoaded', initYouTubeVideos);
+  
